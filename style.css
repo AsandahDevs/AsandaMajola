@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(to left, black, grey);
+    color: white;
+}
+
+.hero-image {
+    background-image: url(/Images/Dark_Sand.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  a.nav-link.active {
+    color: hotpink !important;
+  }
+  
+  .anchor-style {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .anchor-style:hover {
+    color: palevioletred;
+  }
+
+  h1,
+h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  text-shadow: 4px 4px 4px hotpink;
+}
+
+div.carousel-indicators > button.active {
+  background-color: hotpink;
+}
+
+/*removing default border styling on hamburger nav icon upon a click or focus event */
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: 1px solid black; /* Do not interfer with this property bu setting it to 'none' as it is considered bad practice for accessibility purposes especially when an element is focused.*/
+  box-shadow: none !important;
+  border: none;
+}
+
+/* removing default border */
+button.navbar-toggler {
+  border: none;
+}
