@@ -22,7 +22,7 @@ body {
   color: white;
 }
 
-a.nav-link.active {
+.active {
   color: hotpink !important;
 }
 
